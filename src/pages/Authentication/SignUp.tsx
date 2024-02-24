@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import Breadcrumb from '../../components/Breadcrumbs/Breadcrumb';
 import DefaultLayout from '../../layout/DefaultLayout';
 import Logo from '../../images/logo/logo';
-import LogoDark from '../../images/logo/logodark';
+import LogoDark from '../../images/logo/logoDark';
 import useColorMode from '../../hooks/useColorMode';
 
 const SignUp: React.FC = () => {
