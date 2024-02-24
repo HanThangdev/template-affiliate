@@ -1,0 +1,137 @@
+const Logo = ({ className }: { className?: string }) => {
+  const svgCode = `
+  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 2303 636" version="1.1">
+  <defs>
+  <filter id="alpha" filterUnits="objectBoundingBox" x="0%" y="0%" width="100%" height="100%">
+    <feColorMatrix type="matrix" in="SourceGraphic" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0"></feColorMatrix>
+  </filter>
+  <mask id="mask0">
+    <g filter="url(#alpha)">
+  <rect x="0" y="0" width="2303" height="636" style="fill: rgb(0, 0, 0); fill-opacity: 0.992157; stroke: none;" class="svg-elem-1"></rect>
+    </g>
+  </mask>
+  <clipPath id="clip1">
+    <rect x="0" y="0" width="2303" height="636" class="svg-elem-2"></rect>
+  </clipPath>
+  <g id="surface5" clip-path="url(#clip1)">
+  <path style="stroke: none; fill-rule: evenodd; fill: rgb(1, 103, 168); fill-opacity: 1;" d="M 204.5 -0.5 C 341.5 -0.5 478.5 -0.5 615.5 -0.5 C 613.730469 78.902344 579.0625 139.070312 511.5 180 C 480.066406 197.308594 446.398438 206.144531 410.5 206.5 C 273.667969 205.5 136.667969 205.167969 -0.5 205.5 C -0.5 199.167969 -0.5 192.832031 -0.5 186.5 C 7.472656 119.703125 39.472656 67.867188 95.5 31 C 129.085938 10.691406 165.417969 0.191406 204.5 -0.5 Z M 204.5 -0.5 " class="svg-elem-3"></path>
+  </g>
+  <mask id="mask1">
+    <g filter="url(#alpha)">
+  <rect x="0" y="0" width="2303" height="636" style="fill: rgb(0, 0, 0); fill-opacity: 0.980392; stroke: none;" class="svg-elem-4"></rect>
+    </g>
+  </mask>
+  <clipPath id="clip2">
+    <rect x="0" y="0" width="2303" height="636" class="svg-elem-5"></rect>
+  </clipPath>
+  <g id="surface8" clip-path="url(#clip2)">
+  <path style="stroke: none; fill-rule: evenodd; fill: rgb(255, 255, 255); fill-opacity: 1;" d="M 1972.5 185.5 C 1995.5 185.5 2018.5 185.5 2041.5 185.5 C 2041.5 294.832031 2041.5 404.167969 2041.5 513.5 C 2018.5 513.5 1995.5 513.5 1972.5 513.5 C 1972.5 404.167969 1972.5 294.832031 1972.5 185.5 Z M 1972.5 185.5 " class="svg-elem-6"></path>
+  </g>
+  <mask id="mask2">
+    <g filter="url(#alpha)">
+  <rect x="0" y="0" width="2303" height="636" style="fill: rgb(0, 0, 0); fill-opacity: 0.984314; stroke: none;" class="svg-elem-7"></rect>
+    </g>
+  </mask>
+  <clipPath id="clip3">
+    <rect x="0" y="0" width="2303" height="636" class="svg-elem-8"></rect>
+  </clipPath>
+  <g id="surface11" clip-path="url(#clip3)">
+  <path style="stroke: none; fill-rule: evenodd; fill: rgb(255, 255, 255); fill-opacity: 1;" d="M 838.5 192.5 C 896.945312 188.65625 944.777344 208.992188 982 253.5 C 984.699219 257.367188 987.199219 261.367188 989.5 265.5 C 968.820312 277.996094 947.984375 290.332031 927 302.5 C 912.714844 279.421875 891.878906 266.589844 864.5 264 C 832.023438 260.375 804.859375 270.542969 783 294.5 C 766.824219 316.875 760.488281 341.875 764 369.5 C 771.984375 420.8125 801.984375 447.480469 854 449.5 C 885.679688 449.417969 910.179688 436.417969 927.5 410.5 C 948.082031 422.375 968.582031 434.375 989 446.5 C 987.933594 449.964844 986.265625 453.300781 984 456.5 C 956.996094 492.101562 921.160156 512.933594 876.5 519 C 808.019531 526.664062 754.1875 502.496094 715 446.5 C 690.527344 403.796875 684.191406 358.464844 696 310.5 C 710.457031 260.375 741.621094 224.875 789.5 204 C 805.492188 198.082031 821.824219 194.25 838.5 192.5 Z M 838.5 192.5 " class="svg-elem-9"></path>
+  </g>
+  <mask id="mask3">
+    <g filter="url(#alpha)">
+  <rect x="0" y="0" width="2303" height="636" style="fill: rgb(0, 0, 0); fill-opacity: 0.980392; stroke: none;" class="svg-elem-10"></rect>
+    </g>
+  </mask>
+  <clipPath id="clip4">
+    <rect x="0" y="0" width="2303" height="636" class="svg-elem-11"></rect>
+  </clipPath>
+  <g id="surface14" clip-path="url(#clip4)">
+  <path style="stroke: none; fill-rule: evenodd; fill: rgb(255, 255, 255); fill-opacity: 1;" d="M 1023.5 198.5 C 1046.5 198.5 1069.5 198.5 1092.5 198.5 C 1092.328125 234.835938 1092.5 271.167969 1093 307.5 C 1101.390625 296.804688 1112.21875 289.640625 1125.5 286 C 1154.429688 277.933594 1181.429688 281.933594 1206.5 298 C 1228.210938 315.921875 1239.371094 339.085938 1240 367.5 C 1240.5 416.164062 1240.671875 464.832031 1240.5 513.5 C 1217.5 513.5 1194.5 513.5 1171.5 513.5 C 1171.671875 467.5 1171.5 421.5 1171 375.5 C 1166.039062 355.882812 1153.371094 345.882812 1133 345.5 C 1112.710938 345.46875 1099.710938 355.136719 1094 374.5 C 1092.53125 420.792969 1092.03125 467.128906 1092.5 513.5 C 1069.5 513.5 1046.5 513.5 1023.5 513.5 C 1023.5 408.5 1023.5 303.5 1023.5 198.5 Z M 1023.5 198.5 " class="svg-elem-12"></path>
+  </g>
+  <mask id="mask4">
+    <g filter="url(#alpha)">
+  <rect x="0" y="0" width="2303" height="636" style="fill: rgb(0, 0, 0); fill-opacity: 0.988235; stroke: none;" class="svg-elem-13"></rect>
+    </g>
+  </mask>
+  <clipPath id="clip5">
+    <rect x="0" y="0" width="2303" height="636" class="svg-elem-14"></rect>
+  </clipPath>
+  <g id="surface17" clip-path="url(#clip5)">
+  <path style="stroke: none; fill-rule: evenodd; fill: rgb(255, 255, 255); fill-opacity: 1;" d="M 1740.5 198.5 C 1804.5 198.5 1868.5 198.5 1932.5 198.5 C 1932.5 221.832031 1932.5 245.167969 1932.5 268.5 C 1892.828125 268.5 1853.171875 268.5 1813.5 268.5 C 1813.5 288.5 1813.5 308.5 1813.5 328.5 C 1852.5 328.5 1891.5 328.5 1930.5 328.5 C 1930.5 351.832031 1930.5 375.167969 1930.5 398.5 C 1891.5 398.5 1852.5 398.5 1813.5 398.5 C 1813.5 436.832031 1813.5 475.167969 1813.5 513.5 C 1789.171875 513.5 1764.828125 513.5 1740.5 513.5 C 1740.5 408.5 1740.5 303.5 1740.5 198.5 Z M 1740.5 198.5 " class="svg-elem-15"></path>
+  </g>
+  <mask id="mask5">
+    <g filter="url(#alpha)">
+  <rect x="0" y="0" width="2303" height="636" style="fill: rgb(0, 0, 0); fill-opacity: 0.996078; stroke: none;" class="svg-elem-16"></rect>
+    </g>
+  </mask>
+  <clipPath id="clip6">
+    <rect x="0" y="0" width="2303" height="636" class="svg-elem-17"></rect>
+  </clipPath>
+  <g id="surface20" clip-path="url(#clip6)">
+  <path style="stroke: none; fill-rule: evenodd; fill: rgb(46, 118, 181); fill-opacity: 1;" d="M -0.5 205.5 C 136.667969 205.167969 273.667969 205.5 410.5 206.5 C 407.789062 284.953125 373.121094 344.453125 306.5 385 C 275.109375 402.429688 241.441406 411.265625 205.5 411.5 C 137.003906 410.5 68.335938 410.167969 -0.5 410.5 C -0.5 342.167969 -0.5 273.832031 -0.5 205.5 Z M -0.5 205.5 " class="svg-elem-18"></path>
+  </g>
+  <mask id="mask6">
+    <g filter="url(#alpha)">
+  <rect x="0" y="0" width="2303" height="636" style="fill: rgb(0, 0, 0); fill-opacity: 0.984314; stroke: none;" class="svg-elem-19"></rect>
+    </g>
+  </mask>
+  <clipPath id="clip7">
+    <rect x="0" y="0" width="2303" height="636" class="svg-elem-20"></rect>
+  </clipPath>
+  <g id="surface23" clip-path="url(#clip7)">
+  <path style="stroke: none; fill-rule: evenodd; fill: rgb(255, 255, 255); fill-opacity: 1;" d="M 1648.5 225.5 C 1650.488281 246.140625 1651.160156 267.140625 1650.5 288.5 C 1666.171875 288.5 1681.828125 288.5 1697.5 288.5 C 1697.5 310.5 1697.5 332.5 1697.5 354.5 C 1681.828125 354.5 1666.171875 354.5 1650.5 354.5 C 1650.058594 382.867188 1650.558594 411.199219 1652 439.5 C 1653.46875 444.972656 1656.96875 448.472656 1662.5 450 C 1673.78125 452.429688 1685.109375 452.929688 1696.5 451.5 C 1697.5 472.488281 1697.828125 493.488281 1697.5 514.5 C 1676.429688 516.277344 1655.429688 515.777344 1634.5 513 C 1603.449219 505.941406 1586.621094 486.441406 1584 454.5 C 1582.570312 421.191406 1582.070312 387.859375 1582.5 354.5 C 1570.5 354.5 1558.5 354.5 1546.5 354.5 C 1546.5 332.5 1546.5 310.5 1546.5 288.5 C 1558.5 288.5 1570.5 288.5 1582.5 288.5 C 1582.5 274.167969 1582.5 259.832031 1582.5 245.5 C 1604.769531 239.40625 1626.769531 232.738281 1648.5 225.5 Z M 1648.5 225.5 " class="svg-elem-21"></path>
+  </g>
+  <mask id="mask7">
+    <g filter="url(#alpha)">
+  <rect x="0" y="0" width="2303" height="636" style="fill: rgb(0, 0, 0); fill-opacity: 0.984314; stroke: none;" class="svg-elem-22"></rect>
+    </g>
+  </mask>
+  <clipPath id="clip8">
+    <rect x="0" y="0" width="2303" height="636" class="svg-elem-23"></rect>
+  </clipPath>
+  <g id="surface26" clip-path="url(#clip8)">
+  <path style="stroke: none; fill-rule: evenodd; fill: rgb(255, 255, 255); fill-opacity: 1;" d="M 1368.5 282.5 C 1390.691406 280.167969 1411.691406 284 1431.5 294 C 1437.289062 298.121094 1442.789062 302.621094 1448 307.5 C 1448.5 301.175781 1448.671875 294.84375 1448.5 288.5 C 1471.5 288.5 1494.5 288.5 1517.5 288.5 C 1517.5 363.5 1517.5 438.5 1517.5 513.5 C 1494.5 513.5 1471.5 513.5 1448.5 513.5 C 1448.671875 507.15625 1448.5 500.824219 1448 494.5 C 1430.011719 512.449219 1408.179688 521.117188 1382.5 520.5 C 1334.75 517.25 1301.589844 493.585938 1283 449.5 C 1270.609375 413.628906 1271.941406 378.296875 1287 343.5 C 1304.390625 309.917969 1331.558594 289.585938 1368.5 282.5 Z M 1394.5 346.5 C 1429.359375 348.359375 1447.359375 366.695312 1448.5 401.5 C 1446.980469 435.355469 1429.308594 453.355469 1395.5 455.5 C 1361.761719 453.410156 1344.101562 435.410156 1342.5 401.5 C 1344.210938 368.132812 1361.539062 349.796875 1394.5 346.5 Z M 1394.5 346.5 " class="svg-elem-24"></path>
+  </g>
+  <mask id="mask8">
+    <g filter="url(#alpha)">
+  <rect x="0" y="0" width="2303" height="636" style="fill: rgb(0, 0, 0); fill-opacity: 0.984314; stroke: none;" class="svg-elem-25"></rect>
+    </g>
+  </mask>
+  <clipPath id="clip9">
+    <rect x="0" y="0" width="2303" height="636" class="svg-elem-26"></rect>
+  </clipPath>
+  <g id="surface29" clip-path="url(#clip9)">
+  <path style="stroke: none; fill-rule: evenodd; fill: rgb(255, 255, 255); fill-opacity: 1;" d="M 2302.5 288.5 C 2302.5 289.832031 2302.5 291.167969 2302.5 292.5 C 2275.871094 365.878906 2249.699219 439.546875 2224 513.5 C 2215.238281 537.539062 2202.070312 558.707031 2184.5 577 C 2159.300781 597.726562 2130.300781 606.558594 2097.5 603.5 C 2097.5 582.167969 2097.5 560.832031 2097.5 539.5 C 2125.558594 541.640625 2144.230469 529.472656 2153.5 503 C 2123.148438 431.765625 2093.480469 360.265625 2064.5 288.5 C 2089.5 288.5 2114.5 288.5 2139.5 288.5 C 2155.359375 333.578125 2171.53125 378.578125 2188 423.5 C 2202.730469 378.800781 2216.570312 333.800781 2229.5 288.5 C 2253.828125 288.5 2278.171875 288.5 2302.5 288.5 Z M 2302.5 288.5 " class="svg-elem-27"></path>
+  </g>
+  <mask id="mask9">
+    <g filter="url(#alpha)">
+  <rect x="0" y="0" width="2303" height="636" style="fill: rgb(0, 0, 0); fill-opacity: 0.996078; stroke: none;" class="svg-elem-28"></rect>
+    </g>
+  </mask>
+  <clipPath id="clip10">
+    <rect x="0" y="0" width="2303" height="636" class="svg-elem-29"></rect>
+  </clipPath>
+  <g id="surface32" clip-path="url(#clip10)">
+  <path style="stroke: none; fill-rule: evenodd; fill: rgb(50, 144, 202); fill-opacity: 1;" d="M -0.5 410.5 C 68.335938 410.167969 137.003906 410.5 205.5 411.5 C 202.589844 489.859375 167.921875 549.359375 101.5 590 C 69.785156 607.59375 35.785156 616.429688 -0.5 616.5 C -0.5 547.832031 -0.5 479.167969 -0.5 410.5 Z M -0.5 410.5 " class="svg-elem-30"></path>
+  </g>
+  </defs>
+  <g id="surface1">
+  <use xlink:href="#surface5" mask="url(#mask0)"></use>
+  <use xlink:href="#surface8" mask="url(#mask1)"></use>
+  <use xlink:href="#surface11" mask="url(#mask2)"></use>
+  <use xlink:href="#surface14" mask="url(#mask3)"></use>
+  <use xlink:href="#surface17" mask="url(#mask4)"></use>
+  <use xlink:href="#surface20" mask="url(#mask5)"></use>
+  <use xlink:href="#surface23" mask="url(#mask6)"></use>
+  <use xlink:href="#surface26" mask="url(#mask7)"></use>
+  <use xlink:href="#surface29" mask="url(#mask8)"></use>
+  <use xlink:href="#surface32" mask="url(#mask9)"></use>
+  </g>
+  </svg>
+</style>
+`;
+  return <div className={className} dangerouslySetInnerHTML={{ __html: svgCode }} />;
+};
+
+export default Logo;
